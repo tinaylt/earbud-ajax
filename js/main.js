@@ -28,7 +28,11 @@
   
         const textElement = document.createElement('p');
         textElement.textContent = infoBox.description;
+
+        const infoImg = document.createElement('img');
+        infoImg.src = `images/${infoBox.thumbnail}`;
   
+        selected.appendChild(infoImg);
         selected.appendChild(titleElement);
         selected.appendChild(textElement);
 
